@@ -1,4 +1,3 @@
-// server/src/inference/onnxServer.js
 import fs from "fs";
 import sharp from "sharp";
 import * as ort from "onnxruntime-node";
