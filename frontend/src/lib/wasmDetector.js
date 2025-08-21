@@ -1,4 +1,4 @@
-import * as ort from "onnxruntime-web"; // npm install onnxruntime-web
+import * as ort from "onnxruntime-web"; 
 
 let session = null;
 
