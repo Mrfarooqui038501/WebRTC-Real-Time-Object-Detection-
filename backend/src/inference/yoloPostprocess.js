@@ -1,11 +1,3 @@
-// backend/src/inference/yoloPostprocess.js
-
-/**
- * Post-process YOLO output tensor
- * - Applies confidence thresholding + Non-Max Suppression (NMS)
- * - Converts raw model output into {label, score, box} objects
- */
-
 const COCO_CLASSES = [
   "person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train",
   "truck", "boat", "traffic light", "fire hydrant", "stop sign", "parking meter",
