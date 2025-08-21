@@ -1,4 +1,3 @@
-// backend/qr.js
 import os from "os";
 import qrcode from "qrcode";
 import ip from "ip";
