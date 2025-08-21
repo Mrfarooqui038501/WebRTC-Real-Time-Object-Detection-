@@ -6,8 +6,7 @@ import MetricsPanel from "./components/MetricsPanel";
 export default function App() {
   const [detections, setDetections] = useState(null);
 
-  // Fake detections every 2s (demo mode)
-  // Replace with WebRTC/WebSocket feed in real project
+ 
   useEffect(() => {
     const interval = setInterval(() => {
       setDetections([
