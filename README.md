@@ -67,7 +67,7 @@ WebRTC/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/webrtc-onnx-app.git
+git clone https://github.com/Mrfarooqui038501/WebRTC-Real-Time-Object-Detection-.git
 cd webrtc-onnx-app
 ```
 
@@ -416,9 +416,9 @@ SOFTWARE.
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/your-username/webrtc-onnx-app/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/webrtc-onnx-app/discussions)
-- **Email**: support@yourproject.com
+- **Issues**: [GitHub Issues](https://github.com/Mrfarooqui038501/WebRTC-Real-Time-Object-Detection-.git)
+- **Discussions**: [GitHub Discussions](https://github.com/Mrfarooqui038501/WebRTC-Real-Time-Object-Detection-.git)
+- **Email**: armanfarooqui078601@gmail.com
 
 ## 📈 Star History
 

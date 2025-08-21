@@ -1,0 +1,26 @@
+{
+  "name": "webrtc-vlm-detect-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "NODE_ENV=development nodemon src/index.js",
+    "tunnel": "npx ngrok http --authtoken 31Z0M1b2UT7q7UhzsMthc14lhYZ_2eSbo137EzYXAbRM79V28 3000"
+  },
+  "dependencies": {
+    "@ngrok/ngrok": "^1.5.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ip": "^2.0.1",
+    "ngrok": "^5.0.0-beta.2",
+    "nodemon": "^3.1.10",
+    "onnxruntime-node": "1.22.0",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.34.3",
+    "simple-peer": "^9.11.1",
+    "uuid": "^9.0.1",
+    "ws": "^8.17.1"
+  }
+}

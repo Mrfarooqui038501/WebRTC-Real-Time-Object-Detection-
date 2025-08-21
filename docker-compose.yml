@@ -1,0 +1,39 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: webrtc-frontend
+    ports:
+      - "3000:80"   # Host 3000 → Nginx inside container
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: webrtc-backend
+    ports:
+      - "8080:8080"   # Host 8080 → Express inside container
+    environment:
+      - PORT=8080
+      - MODE=wasm
+      - CONF_THRESHOLD=0.25
+      - IOU_THRESHOLD=0.45
+      - INPUT_SIZE=640
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+    restart: unless-stopped
+
+  ngrok:
+    image: wernight/ngrok
+    container_name: webrtc-ngrok
+    depends_on:
+      - frontend
+    environment:
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+      - NGROK_PORT=frontend:80
+    ports:
+      - "4040:4040" # ngrok web UI (see active tunnels)
+    restart: unless-stopped
